@@ -15,7 +15,7 @@ public:
 	void set—oordinates(int _x, int _y) {
 		x += _x; y += _y;
 	}
-	void get—oordinates() {
+	void getCoordinates() {
 		cout << "(" + to_string(x) + ";" + to_string(y) + ")" << endl;
 	}
 	void getRadius() {
@@ -50,9 +50,9 @@ public:
 		y3 = _width + y1;
 		x4 = _width + x1;
 		y4 = y1;
-		get—oordinates();
+		getCoordinates();
 	}
-	void get—oordinates() {
+	void getCoordinates() {
 		cout << "(" + to_string(x1) + ";" + to_string(y1) + ")" << " " << "(" + to_string(x2) + ";" + to_string(y2) + ")" << " " << "(" + to_string(x3) + ";" + to_string(y3) + ")" << " " << "(" + to_string(x4) + ";" + to_string(y4) + ")" << " " << endl;
 	}
 };
@@ -66,7 +66,7 @@ public:
 		y3 = y1 + _height;
 		x4 = x1 + _width;
 		y4 = y1;
-		get—oordinates();
+		getCoordinates();
 	}
 };
 
@@ -97,7 +97,7 @@ int main() {
 			cout << "ÛÍ‡ÊËÚÂ ÍÓÓ‰ËÌ‡ÚÛ x: "; cin >> x;
 			cout << "ÛÍ‡ÊËÚÂ ÍÓÓ‰ËÌ‡ÚÛ y: "; cin >> y; c1.set—oordinates(x, y);
 			c1.getRadius();
-			c1.get—oordinates();
+			c1.getCoordinates();
 			break;
 		case 2:
 			cout << "ÛÍ‡ÊËÚÂ Ì‡˜‡Î¸Ì˚Â ÍÓÓ‰ËÌ‡Ú˚ x: "; cin >> x;
@@ -133,15 +133,15 @@ int main() {
 
 			if (figure == 1) {
 				c1.set—oordinates(x, y);
-				c1.get—oordinates();
+				c1.getCoordinates();
 			}
 			if (figure == 2) {
 				s1.update—oordinates(x, y);
-				s1.get—oordinates();
+				s1.getCoordinates();
 			}
 			if (figure == 3) {
 				r1.update—oordinates(x, y);
-				r1.get—oordinates();
+				r1.getCoordinates();
 			}
 		}
 		if (method == 2) {
@@ -172,4 +172,5 @@ int main() {
 		} while (figure != 0);
 
 	} while (true);
+
 }
