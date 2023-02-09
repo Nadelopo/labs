@@ -2,6 +2,7 @@
 #include <string>
 
 using namespace std;
+
 class Circle {
 private:
 	int radius = 0;
@@ -67,13 +68,11 @@ public:
 		y4 = y1;
 		get—oordinates();
 	}
-
 };
+
 int main() {
 	setlocale(LC_ALL, "Ru");
 
-
-	//Circle circles[2] = { Circle(4,2,3) , Circle(4,2,3) };
 	do {
 		int figure;
 
@@ -173,5 +172,4 @@ int main() {
 		} while (figure != 0);
 
 	} while (true);
-
 }
