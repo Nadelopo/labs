@@ -12,7 +12,7 @@ public:
 	void setRadius(int _radius) {
 		radius = _radius;
 	}
-	void set—oordinates(int _x, int _y) {
+	void setCoordinates(int _x, int _y) {
 		x += _x; y += _y;
 	}
 	void getCoordinates() {
@@ -34,10 +34,10 @@ protected:
 	int x4 = 0;
 	int y4 = 0;
 public:
-	void set—oordinates(int _x, int _y) {
+	void setCoordinates(int _x, int _y) {
 		x1 += _x; y1 += _y;
 	}
-	void update—oordinates(int _x, int _y) {
+	void updateCoordinates(int _x, int _y) {
 		x1 += _x; y1 += _y;
 		x2 += _x; y2 += _y;
 		x3 += _x; y3 += _y;
@@ -82,10 +82,10 @@ int main() {
 
 		do {
 			system("cls");
-			cout << "ÒÓÁ‰‡Ú¸ ÙË„ÛÛ: \n";
-			cout << "1 - ÍÛ„ \n";
-			cout << "2 - Í‚‡‰‡Ú \n";
-			cout << "3 - ÔˇÏÓÛ„ÓÎ¸ÌËÍ \n";
+			cout << "—Å–æ–∑–¥–∞—Ç—å —Ñ–∏–≥—É—Ä—É: \n";
+			cout << "1 - –∫—Ä—É–≥ \n";
+			cout << "2 - –∫–≤–∞–¥—Ä–∞—Ç \n";
+			cout << "3 - –ø—Ä—è–º–æ—É–≥–æ–ª—å–Ω–∏–∫ \n";
 			cin >> figure;
 			system("cls");
 		} while (figure < 1 || figure > 3);
@@ -93,25 +93,25 @@ int main() {
 		switch (figure) {
 			int r, x, y, width, height;
 		case 1:
-			cout << "ÛÍ‡ÊËÚÂ ‡‰ËÛÒ: "; cin >> r; c1.setRadius(r);
-			cout << "ÛÍ‡ÊËÚÂ ÍÓÓ‰ËÌ‡ÚÛ x: "; cin >> x;
-			cout << "ÛÍ‡ÊËÚÂ ÍÓÓ‰ËÌ‡ÚÛ y: "; cin >> y; c1.set—oordinates(x, y);
+			cout << "—É–∫–∞–∂–∏—Ç–µ —Ä–∞–¥–∏—É—Å: "; cin >> r; c1.setRadius(r);
+			cout << "—É–∫–∞–∂–∏—Ç–µ –∫–æ–æ—Ä–¥–∏–Ω–∞—Ç—É x: "; cin >> x;
+			cout << "—É–∫–∞–∂–∏—Ç–µ –∫–æ–æ—Ä–¥–∏–Ω–∞—Ç—É y: "; cin >> y; c1.setCoordinates(x, y);
 			c1.getRadius();
 			c1.getCoordinates();
 			break;
 		case 2:
-			cout << "ÛÍ‡ÊËÚÂ Ì‡˜‡Î¸Ì˚Â ÍÓÓ‰ËÌ‡Ú˚ x: "; cin >> x;
-			cout << "ÛÍ‡ÊËÚÂ Ì‡˜‡Î¸Ì˚Â ÍÓÓ‰ËÌ‡Ú˚ y: "; cin >> y;
-			s1.set—oordinates(x, y);
-			cout << "ÛÍ‡ÊËÚÂ ¯ËËÌÛ ÒÚÓÓÌ˚: "; cin >> width;
+			cout << "—É–∫–∞–∂–∏—Ç–µ –Ω–∞—á–∞–ª—å–Ω—ã–µ –∫–æ–æ—Ä–¥–∏–Ω–∞—Ç—ã x: "; cin >> x;
+			cout << "—É–∫–∞–∂–∏—Ç–µ –Ω–∞—á–∞–ª—å–Ω—ã–µ –∫–æ–æ—Ä–¥–∏–Ω–∞—Ç—ã y: "; cin >> y;
+			s1.setCoordinates(x, y);
+			cout << "—É–∫–∞–∂–∏—Ç–µ —à–∏—Ä–∏–Ω—É —Å—Ç–æ—Ä–æ–Ω—ã: "; cin >> width;
 			s1.setSides(width);
 			break;
 		case 3:
-			cout << "ÛÍ‡ÊËÚÂ Ì‡˜‡Î¸Ì˚Â ÍÓÓ‰ËÌ‡Ú˚ x: "; cin >> x;
-			cout << "ÛÍ‡ÊËÚÂ Ì‡˜‡Î¸Ì˚Â ÍÓÓ‰ËÌ‡Ú˚ y: "; cin >> y;
-			r1.set—oordinates(x, y);
-			cout << "ÛÍ‡ÊËÚÂ ¯ËËÌÛ: "; cin >> width;
-			cout << "ÛÍ‡ÊËÚÂ ‚˚ÒÓÚÛ: "; cin >> height;
+			cout << "—É–∫–∞–∂–∏—Ç–µ –Ω–∞—á–∞–ª—å–Ω—ã–µ –∫–æ–æ—Ä–¥–∏–Ω–∞—Ç—ã x: "; cin >> x;
+			cout << "—É–∫–∞–∂–∏—Ç–µ –Ω–∞—á–∞–ª—å–Ω—ã–µ –∫–æ–æ—Ä–¥–∏–Ω–∞—Ç—ã y: "; cin >> y;
+			r1.setCoordinates(x, y);
+			cout << "—É–∫–∞–∂–∏—Ç–µ —à–∏—Ä–∏–Ω—É: "; cin >> width;
+			cout << "—É–∫–∞–∂–∏—Ç–µ –≤—ã—Å–æ—Ç—É: "; cin >> height;
 			r1.setSides(width, height);
 			break;
 		default:
@@ -120,53 +120,53 @@ int main() {
 
 		int method;
 		do {
-			cout << "1 - ÔÂÂÏÂ˘ÂÌËÂ \n";
-			cout << "2 - ËÁÏÂÌÂÌËÂ ‡ÁÏÂÓ‚ \n";
+			cout << "1 - –ø–µ—Ä–µ–º–µ—â–µ–Ω–∏–µ \n";
+			cout << "2 - –∏–∑–º–µ–Ω–µ–Ω–∏–µ —Ä–∞–∑–º–µ—Ä–æ–≤ \n";
 			cin >> method;
 		} while (method < 1 || method > 2);
 
 
 		if (method == 1) {
 			int x, y;
-			cout << "ÔÂÂÏÂÒÚËÚ¸ x Ì‡: "; cin >> x;
-			cout << "ÔÂÂÏÂÒÚËÚ¸ y Ì‡: "; cin >> y;
+			cout << "–ø–µ—Ä–µ–º–µ—Å—Ç–∏—Ç—å x –Ω–∞: "; cin >> x;
+			cout << "–ø–µ—Ä–µ–º–µ—Å—Ç–∏—Ç—å y –Ω–∞: "; cin >> y;
 
 			if (figure == 1) {
-				c1.set—oordinates(x, y);
+				c1.setCoordinates(x, y);
 				c1.getCoordinates();
 			}
 			if (figure == 2) {
-				s1.update—oordinates(x, y);
+				s1.updateCoordinates(x, y);
 				s1.getCoordinates();
 			}
 			if (figure == 3) {
-				r1.update—oordinates(x, y);
+				r1.updateCoordinates(x, y);
 				r1.getCoordinates();
 			}
 		}
 		if (method == 2) {
 			if (figure == 1) {
 				int r;
-				cout << "ËÁÏÂÌËÚ¸ ‡‰ËÛÒ Ì‡: "; cin >> r;
+				cout << "–∏–∑–º–µ–Ω–∏—Ç—å —Ä–∞–¥–∏—É—Å –Ω–∞: "; cin >> r;
 				c1.setRadius(r);
 				c1.getRadius();
 			}
 			if (figure == 2) {
 				int side;
-				cout << "ËÁÏÂÌËÚ¸ ÒÚÓÓÌÛ Ì‡: "; cin >> side;
+				cout << "–∏–∑–º–µ–Ω–∏—Ç—å —Å—Ç–æ—Ä–æ–Ω—É –Ω–∞: "; cin >> side;
 				s1.setSides(side);
 			}
 			if (figure == 3) {
 				int width, height;
-				cout << "ËÁÏÂÌËÚ¸ ¯ËËÌÛ Ì‡: "; cin >> width;
-				cout << "ËÁÏÂÌËÚ¸ ‚˚ÒÓÚÛ Ì‡: "; cin >> height;
+				cout << "–∏–∑–º–µ–Ω–∏—Ç—å —à–∏—Ä–∏–Ω—É –Ω–∞: "; cin >> width;
+				cout << "–∏–∑–º–µ–Ω–∏—Ç—å –≤—ã—Å–æ—Ç—É –Ω–∞: "; cin >> height;
 				r1.setSides(width, height);
 			}
 
 		}
 
 		do {
-			cout << "‰Îˇ ‚˚ıÓ‰‡ ‚ ÏÂÌ˛ Ì‡ÊÏËÚÂ 0 \n";
+			cout << "–¥–ª—è –≤—ã—Ö–æ–¥–∞ –≤ –º–µ–Ω—é –Ω–∞–∂–º–∏—Ç–µ 0 \n";
 			cin >> figure;
 			method = 0;
 		} while (figure != 0);
